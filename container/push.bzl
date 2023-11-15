@@ -232,6 +232,7 @@ def _container_push_impl(ctx):
         PushInfo(
             registry = md.registry,
             repository = md.repository,
+            tag = md.tag,
             digest = ctx.outputs.digest,
         ),
     ]
@@ -295,6 +296,7 @@ def _container_push_index_impl(ctx):
         PushInfo(
             registry = md.registry,
             repository = md.repository,
+            tag = md.tag,
             digest = ctx.outputs.digest,
         ),
     ]

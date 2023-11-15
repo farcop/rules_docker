@@ -52,6 +52,7 @@ LayerInfo = provider(fields = [
 PushInfo = provider(fields = [
     "registry",
     "repository",
+    "tag",
     "digest",
 ])
 
